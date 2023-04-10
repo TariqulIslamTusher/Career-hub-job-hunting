@@ -1,7 +1,8 @@
-import React from 'react';
 import LgBtn from './LgBtn';
 
+
 const Banner = () => {
+
     return (
         <div className=' bg-[#818eff25]'>
             <div className="my-container mx-auto grid md:grid-cols-2 justify-between items-center gap-8 ">
@@ -13,7 +14,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div className="banner-img order-1 md:order-2">
-                    <img src="https://plus.unsplash.com/premium_photo-1676998931123-75789162f170?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt=" Image" />
+                    <img src="https://i.ibb.co/Phww7bG/person.png" alt=" Image" />
                 </div>
             </div>
         </div>

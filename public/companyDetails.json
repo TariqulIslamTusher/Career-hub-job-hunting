@@ -1,0 +1,191 @@
+[
+  {
+    "id": 1,
+    "company_name": "Google LLC",
+    "logo": "https://i.ibb.co/3pZKzcr/google-1-1-1.png",
+    "title": "Technical Database Engineer",
+    "job_type": [
+      "Full-time",
+      "Remote-Job"
+    ],
+    "location": "San Francisco, CA",
+    "salary_range": "$90,000 - $120,000",
+    "description": "As a security analyst, you will work on identifying and mitigating security risks for our clients. You will be responsible for conducting security assessments, implementing security controls, and responding to security incidents.",
+    "responsibilities": [
+      "Identify and mitigate security risks",
+      "Conduct security assessments",
+      "Implement security controls",
+      "Respond to security incidents"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Cybersecurity, Information Technology, or a related field",
+    "experience": "2+ years of experience in security analysis"
+  },
+  {
+    "id": 2,
+    "company_name": "Netflix",
+    "logo": "https://i.ibb.co/d65mCS6/netflix-4-1.png",
+    "title": "Senior Product Designer",
+    "job_type": [
+      "Full-time",
+      "Remote-Job"
+    ],
+    "location": "New York, NY",
+    "salary_range": "$70 - $90 per hour",
+    "description": "As a frontend developer, you will work on developing and maintaining client-facing applications. You will be responsible for designing and implementing user interfaces, collaborating with back-end developers, and ensuring web accessibility and performance.",
+    "responsibilities": [
+      "Design and implement user interfaces for client-facing applications",
+      "Collaborate with back-end developers to ensure seamless integration",
+      "Ensure web accessibility and performance",
+      "Stay up-to-date with emerging trends and technologies in frontend development"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Computer Science, Web Development, or a related field",
+    "experience": "2+ years of experience in frontend development"
+  },
+  {
+    "id": 3,
+    "company_name": "Tesla",
+    "logo": "https://i.ibb.co/wrPF52g/tesla-9-1.png",
+    "title": "Software Engineer",
+    "job_type": [
+      "Full-time",
+      "Contract-Job"
+    ],
+    "location": "Seattle, WA",
+    "salary_range": "$120,000 - $150,000",
+    "description": "As a software engineer, you will work on developing and maintaining software applications for our clients. You will be responsible for designing, coding, testing, and debugging software programs, as well as collaborating with cross-functional teams to ensure software is delivered on time and within budget.",
+    "responsibilities": [
+      "Design and develop software applications based on client requirements",
+      "Collaborate with cross-functional teams to ensure software is delivered on time and within budget",
+      "Perform code reviews and debugging",
+      "Stay up-to-date with emerging trends and technologies in software development"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Computer Science or a related field",
+    "experience": "2+ years of experience in software development"
+  },
+  {
+    "id": 4,
+    "company_name": "Google LLC",
+    "logo": "https://i.ibb.co/3pZKzcr/google-1-1-1.png",
+    "title": "Technical Database Engineer",
+    "job_type": [
+      "Full-time",
+      "Remote-Job"
+    ],
+    "location": "Austin, TX",
+    "salary_range": "$40 - $60 per hour",
+    "description": "As a data analyst, you will work on analyzing and interpreting complex data sets to identify trends and insights. You will be responsible for developing and maintaining databases, creating reports and dashboards, and presenting findings to stakeholders.",
+    "responsibilities": [
+      "Collect and analyze large data sets to identify trends and insights",
+      "Develop and maintain databases",
+      "Create reports and dashboards",
+      "Present findings to stakeholders"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Data Science, Statistics, Mathematics, or a related field",
+    "experience": "2+ years of experience in data analysis"
+  },
+  {
+    "id": 5,
+    "company_name": "Airbnb LLC",
+    "logo": "https://ibb.co/TPYFhH5",
+    "title": "Motion Graphic Designer",
+    "job_type": [
+      "Full-time",
+      "Remote-Job"
+    ],
+    "location": "Boston, MA",
+    "salary_range": "$100,000 - $120,000",
+    "description": "As a cloud engineer, you will be responsible for designing and implementing cloud-based solutions for our clients. You will work on developing and maintaining cloud infrastructure, ensuring scalability and reliability, and optimizing costs.",
+    "responsibilities": [
+      "Design and implement cloud-based solutions for clients",
+      "Develop and maintain cloud infrastructure",
+      "Ensure scalability and reliability of cloud systems",
+      "Optimize cloud costs"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Computer Science, Engineering, or a related field",
+    "experience": "2+ years of experience in cloud engineering"
+  },
+  {
+    "id": 6,
+    "company_name": "Artificial Intelligence LLC",
+    "logo": "https://example.com/images/logo.png",
+    "title": "AI Researcher",
+    "job_type": [
+      "Full-time",
+      "Contract-Job"
+    ],
+    "location": "San Jose, CA",
+    "salary_range": "$150,000 - $200,000",
+    "description": "As a software engineer, you will work on developing and maintaining software applications for our clients. You will be responsible for designing, coding, testing, and debugging software programs, as well as collaborating with cross-functional teams to ensure software is delivered on time and within budget.",
+    "responsibilities": [
+      "Design and develop software applications based on client requirements",
+      "Collaborate with cross-functional teams to ensure software is delivered on time and within budget",
+      "Perform code reviews and debugging",
+      "Stay up-to-date with emerging trends and technologies in software development"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Computer Science or a related field",
+    "experience": "2+ years of experience in software development"
+  },
+  {
+    "id": 7,
+    "company_name": "Database Solutions Co.",
+    "logo": "https://example.com/images/logo.png",
+    "title": "Database Administrator",
+    "job_type": [
+      "Full-time",
+      "Remote-Job"
+    ],
+    "location": "Chicago, IL",
+    "salary_range": "$80 - $100 per hour",
+    "description": "As a data analyst, you will work on analyzing and interpreting complex data sets to identify trends and insights. You will be responsible for developing and maintaining databases, creating reports and dashboards, and presenting findings to stakeholders.",
+    "responsibilities": [
+      "Collect and analyze large data sets to identify trends and insights",
+      "Develop and maintain databases",
+      "Create reports and dashboards",
+      "Present findings to stakeholders"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Data Science, Statistics, Mathematics, or a related field",
+    "experience": "2+ years of experience in data analysis"
+  },
+  {
+    "id": 8,
+    "company_name": "IT Consulting Group",
+    "logo": "https://example.com/images/logo.png",
+    "title": "IT Consultant",
+    "job_type": [
+      "Full-time",
+      "Contract-Job"
+    ],
+    "location": "Washington, DC",
+    "salary_range": "$120,000 - $150,000",
+    "description": "As a cloud engineer, you will be responsible for designing and implementing cloud-based solutions for our clients. You will work on developing and maintaining cloud infrastructure, ensuring scalability and reliability, and optimizing costs.",
+    "responsibilities": [
+      "Design and implement cloud-based solutions for clients",
+      "Develop and maintain cloud infrastructure",
+      "Ensure scalability and reliability of cloud systems",
+      "Optimize cloud costs"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Computer Science, Engineering, or a related field",
+    "experience": "2+ years of experience in cloud engineering"
+  },
+  {
+    "id": 9,
+    "company_name": "E-commerce Solutions Inc.",
+    "logo": "https://example.com/images/logo.png",
+    "title": "E-commerce Developer",
+    "job_type": [
+      "Full-time",
+      "Remote-Job"
+    ],
+    "location": "Los Angeles, CA",
+    "salary_range": "$90,000 - $120,000",
+    "description": "As a cloud engineer, you will be responsible for designing and implementing cloud-based solutions for our clients. You will work on developing and maintaining cloud infrastructure, ensuring scalability and reliability, and optimizing costs.",
+    "responsibilities": [
+      "Design and implement cloud-based solutions for clients",
+      "Develop and maintain cloud infrastructure",
+      "Ensure scalability and reliability of cloud systems",
+      "Optimize cloud costs"
+    ],
+    "educational_requirements": "Bachelor's or Master's degree in Computer Science, Engineering, or a related field",
+    "experience": "2+ years of experience in cloud engineering"
+  }
+]

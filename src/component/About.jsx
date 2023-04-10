@@ -1,9 +1,12 @@
 import React from 'react';
+import PageTopStyle from './PageTopStyle';
+
 
 const About = () => {
     return (
         <div>
-            This is the about section
+            <PageTopStyle>About</PageTopStyle>
+            
         </div>
     );
 };
