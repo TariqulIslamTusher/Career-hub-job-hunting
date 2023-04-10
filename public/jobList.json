@@ -1,0 +1,26 @@
+[
+    {
+      "id": "643360d1cad5439b81839a24",
+      "img": "https://i.ibb.co/G5NP8Pc/accounts-1.png",
+      "title": "Account & Finance",
+      "availability": "300 Job Availabel"
+    },
+    {
+      "id": "643360d1a481d49d2558aff0",
+      "img": "https://i.ibb.co/n14k3fF/business-1.png",
+      "title": "Creative Design",
+      "availability": "200+ Job Availabel"
+    },
+    {
+      "id": "643360d1188cfce3e98cc5ee",
+      "img": "https://i.ibb.co/KFnK387/social-media-1.png",
+      "title": "Marketing & Sales",
+      "availability": "500+ Job Availabel"
+    },
+    {
+      "id": "643360d1fd897ae077e2bec5",
+      "img": "https://i.ibb.co/qmQkZ6v/chip-1.png",
+      "title": "Engineering Job",
+      "availability": "160+ Job Availabel"
+    }
+  ]
