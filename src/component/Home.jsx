@@ -8,7 +8,7 @@ export const RingContext = createContext([])
 
 const Home = () => {
    const companies = useLoaderData()
-   
+
     return (
         <div>
             <RingContext.Provider value={companies}>

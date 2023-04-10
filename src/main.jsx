@@ -1,15 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import './index.css'
-import Root from './component/Root';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import Home from './component/Home';
 import About from './component/About';
 import JobDetails from './component/JobDetails';
 import ErrorPage from './component/ErrorPage';
+import Root from './Root';
 
 
 const router = createBrowserRouter([
@@ -21,18 +18,18 @@ const router = createBrowserRouter([
       {
         path:'/',
         element: <Home></Home>,
-        loader: () => fetch('companyDetails.json')
-      },
-      {
-        path:'/about',
-        element: <About></About>
+        loader: () => fetch('companyDetails.json')        
       },
       {
         path:'/jobDetails/:jobId',
         element: <JobDetails></JobDetails>,
-        loader: ({params})=>fetch(`companyDetails.json${params.jobId}`)
+        loader: () => fetch('companyDetails.json')         
+      },
+      {
+        path:'/about',
+        element: <About></About>
       }
-      
+     
     ]
   },
 ]);

@@ -1,12 +1,11 @@
 import React, { useContext } from 'react';
-import { RingContext } from './Home';
 import FeatureCard from './FeatureCard';
 import LgBtn from './LgBtn';
+import { RingContext } from './Home';
 
 const FeatureJob = () => {
-
     const companies = useContext(RingContext)
-   
+
     return (
         <div className='py-7 my-container mx-auto'>
             <div className='py-6 text-center divide-x-2'>

@@ -3,7 +3,7 @@ import { useRouteError } from 'react-router-dom';
 
 const ErrorPage = () => {
     const error = useRouteError()
-    console.log(error.state)
+
     return (
         <div className="error-container">
         <h1 className="error-heading">Oops!</h1>

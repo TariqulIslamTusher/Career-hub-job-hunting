@@ -14,7 +14,7 @@ const Header = () => {
                     <h1 className='btn btn-ghost text-2xl font-bold text-purple-700'>JOB HUNTING</h1>
                 </div>
                 <div className={`flex absolute  w-full ${isOpen? 'top-16 bg-blue-200 py-4 px-3  gap-5': '-top-80'} md:bg-transparent duration-700 md:static md:w-7/12 mx-auto justify-between items-center`}>
-                    <ul className='flex list-unstyled gap-5 font-semibold'>
+                    <ul className='flex list-unstyled gap-7 font-semibold'>
                         <li className='hover:text-blue-600 hover:underline duration-200'><Link to="/">Home</Link></li>
                         <li className='hover:text-blue-600 hover:underline duration-200'><Link to="/statistics">Statistics</Link></li>
                         <li className='hover:text-blue-600 hover:underline duration-200'><Link to="/contact">Contact</Link></li>
