@@ -2,13 +2,13 @@ import React from 'react';
 import PageTopStyle from './PageTopStyle';
 
 
-const About = () => {
+const Blog = () => {
     return (
         <div>
-            <PageTopStyle>About</PageTopStyle>
+            <PageTopStyle>Blog</PageTopStyle>
             
         </div>
     );
 };
 
-export default About;
+export default Blog;

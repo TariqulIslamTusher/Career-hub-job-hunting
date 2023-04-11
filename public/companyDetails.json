@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": "4377573f-3b61-4e45-b9fb-3b0cde3c26c8",
     "email": "company2@example.com",
     "phone": "+1 234-567-8901",
     "address": "456 Oak Ave, Anytown, USA",
@@ -24,7 +24,7 @@
     "experience": "2+ years of experience in security analysis"
   },
   {
-    "id": 2,
+    "id": "2e99a354-01aa-40db-a04f-c57d84f6eb32",
     "email": "company3@example.com",
     "phone": "+1 345-678-9012",
     "address": "789 Elm St, Anytown, USA",
@@ -48,7 +48,7 @@
     "experience": "2+ years of experience in frontend development"
   },
   {
-    "id": 3,
+    "id": "e320ce6d-04f8-4c15-bd57-4150eebde79a",
     "email": "company4@example.com",
     "phone": "+1 456-789-0123",
     "address": "321 Maple Rd, Anytown, USA",
@@ -72,7 +72,7 @@
     "experience": "2+ years of experience in software development"
   },
   {
-    "id": 4,
+    "id": "e320ce6d-04f8-4dfgc15-bd57-4150ehg",
     "email": "company5@example.com",
     "phone": "+1 567-890-1234",
     "address": "654 Pine St, Anytown, USA",
@@ -96,12 +96,12 @@
     "experience": "2+ years of experience in data analysis"
   },
   {
-    "id": 5,
+    "id": "e320cegfd6d-04f8-4c15-bde79a",
     "email": "company6@example.com",
     "phone": "+1 678-901-2345",
     "address": "987 Cedar Rd, Anytown, USA",
     "company_name": "Airbnb LLC",
-    "logo": "https://ibb.co/TPYFhH5",
+    "logo": "https://i.ibb.co/CzZZrL5/Group-10021.png",
     "title": "Motion Graphic Designer",
     "job_type": [
       "Full-time",
@@ -120,12 +120,12 @@
     "experience": "2+ years of experience in cloud engineering"
   },
   {
-    "id": 6,
+    "id": "e320ce6d-04f8-4c15-bd57-9a",
     "email": "company7@example.com",
     "phone": "+1 789-012-3456",
     "address": "1234 Elm St, Anytown, USA",
     "company_name": "Artificial Intelligence LLC",
-    "logo": "https://example.com/images/logo.png",
+    "logo": "https://i.ibb.co/3pZKzcr/google-1-1-1.png",
     "title": "AI Researcher",
     "job_type": [
       "Full-time",
@@ -144,12 +144,12 @@
     "experience": "2+ years of experience in software development"
   },
   {
-    "id": 7,
+    "id": "04f8-4c15-bd57-4150eebde320ce6de79a",
     "email": "company9@example.com",
     "phone": "+1 901-234-5678",
     "address": "9012 Maple Rd, Anytown, USA",
     "company_name": "Database Solutions Co.",
-    "logo": "https://example.com/images/logo.png",
+    "logo": "https://i.ibb.co/d65mCS6/netflix-4-1.png",
     "title": "Database Administrator",
     "job_type": [
       "Full-time",
@@ -168,12 +168,12 @@
     "experience": "2+ years of experience in data analysis"
   },
   {
-    "id": 8,
+    "id": "w5435dsgr-04f8-4c15-bd57",
     "email": "company9@example.net",
     "phone": "+1 901-234-5678",
     "address": "9012 Maple Rd, Anytown, USA",
     "company_name": "IT Consulting Group",
-    "logo": "https://example.com/images/logo.png",
+    "logo": "https://i.ibb.co/wrPF52g/tesla-9-1.png",
     "title": "IT Consultant",
     "job_type": [
       "Full-time",
@@ -193,12 +193,12 @@
    
   },
   {
-    "id": 9,
+    "id": "04f8-e320ce6d-4150eebde79a-4c15-bd5",
     "email": "company8@example.org",
     "phone": "+1 890-123-4567",
     "address": "5678 Oak Ave, Anytown, USA",
     "company_name": "E-commerce Solutions Inc.",
-    "logo": "https://example.com/images/logo.png",
+    "logo": "https://i.ibb.co/3pZKzcr/google-1-1-1.png",
     "title": "E-commerce Developer",
     "job_type": [
       "Full-time",

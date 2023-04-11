@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
 import Home from './component/Home';
-import About from './component/About';
+import Blog from './component/Blog';
 import JobDetails from './component/JobDetails';
 import ErrorPage from './component/ErrorPage';
 import Root from './Root';
 import AppliedJobList from './component/AppliedJobList';
+import Statistics from './component/Statistics';
+import TotalCard from './TotalCard';
 
 
 const router = createBrowserRouter([
@@ -27,12 +29,20 @@ const router = createBrowserRouter([
         loader: () => fetch('/companyDetails.json')         
       },
       {
-        path:'/about',
-        element: <About></About>
+        path:'/Blog',
+        element: <Blog></Blog>
       },
       {
         path:'/appliedJobList',
         element: <AppliedJobList></AppliedJobList>
+      },
+      {
+        path: '/statistics',
+        element: <Statistics></Statistics>
+      },
+      {
+        path:'/totalCardApply',
+        element: <TotalCard></TotalCard>
       }
      
     ]

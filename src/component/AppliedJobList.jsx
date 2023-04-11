@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import PageTopStyle from './PageTopStyle';
 import { getItemFromLocalStoreage } from './Utilities/Utilities';
+import VerticallyCardDesign from './VerticallyCardDesign';
 
 const AppliedJobList = () => {
     const [data, setData] = useState([])
@@ -12,17 +13,18 @@ const AppliedJobList = () => {
     },[])
 
     const localObject = getItemFromLocalStoreage()
-    const ArrayOfLocalObject = Object.keys(localObject)
+    let ArrayOfLocalObject;
+    {
+        localObject? ArrayOfLocalObject = Object.keys(localObject) : ArrayOfLocalObject = []
+    }
 
-    const appliedList = data.filter(Sdata => ArrayOfLocalObject.includes(Sdata.id))
-
-    console.log(appliedList)
+    const appliedList = data.filter(singleData => ArrayOfLocalObject.includes(singleData.id))
     return (
         <div>
             <PageTopStyle>Applied Job</PageTopStyle>
             <div className='my-container mx-auto'>
                 {
-                    
+                    appliedList.map(singleList => <VerticallyCardDesign singleList={singleList}></VerticallyCardDesign>)
                 }
             </div>
         </div>
