@@ -33,3 +33,6 @@ export function getItemFromLocalStoreage () {
 
     return Cart
 }
+
+
+//delete the local storeage

@@ -9,7 +9,8 @@ import ErrorPage from './component/ErrorPage';
 import Root from './Root';
 import AppliedJobList from './component/AppliedJobList';
 import Statistics from './component/Statistics';
-import TotalCard from './TotalCard';
+import TotalCard from './component/TotalCard';
+
 
 
 const router = createBrowserRouter([

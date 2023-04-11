@@ -8,11 +8,13 @@ const FeatureCard = (props) => {
     return (
         <div className='p-6 border-2 border-blue-200 w-full rounded-lg '>
             <img src={logo} alt="" />
-            <h2 className='font-bold text-3xl my-3'>{title}</h2>
-            <h5 className='text-slate-700 font-semibold'>{company_name}</h5>
+            <h2 className='font-bold text-3xl my-3 text-orange-700'>{title}</h2>
+            <h5 className='text-teal-900 font-semibold'>{company_name}</h5>
             <div className='flex lg:w-6/12'>
-                <h3 className='border-2 px-3 py-1 text-sm mt-3 border-blue-300 mr-3'>{job_type[0]}</h3>
-                <h3 className='border-2 px-3 py-1 text-sm mt-3 border-blue-300'>{job_type[1]}</h3>
+                {
+                    job_type.map(type => <h3 className='border-2 rounded-md text-blue-700 px-3 py-1 text-sm mt-3 border-blue-300 mr-3'>{type}</h3>)
+                }
+            
             </div>
             <div className='flex my-3'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 mr-2">

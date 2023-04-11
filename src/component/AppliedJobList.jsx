@@ -27,6 +27,9 @@ const AppliedJobList = () => {
                     appliedList.map(singleList => <VerticallyCardDesign singleList={singleList}></VerticallyCardDesign>)
                 }
             </div>
+            <div className='py-3 text-right my-container mx-auto'>
+                <button  className='LgBtn'>Clear Applience</button>
+            </div>
         </div>
     );
 };

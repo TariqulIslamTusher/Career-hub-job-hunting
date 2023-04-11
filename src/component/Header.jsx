@@ -27,7 +27,7 @@ const Header = () => {
 
                     <div className='hidden md:block'>
                         <Link to={'/totalCardApply'}>
-                            <button  className='LgBtn'>Start Applying</button>
+                            <button className='LgBtn'>Start Applying</button>
                         </Link>
                     </div>
                 </div>

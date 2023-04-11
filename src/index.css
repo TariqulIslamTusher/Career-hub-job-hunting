@@ -9,7 +9,7 @@
 }
 
 .LgBtn{
-  @apply btn text-lg lg:text-xl bg-gradient-to-r from-blue-400 to-blue-800 border-0 duration-700 transition-all hover:bg-gradient-to-r hover:from-blue-400 hover:to-purple-800
+  @apply btn text-lg lg:text-xl bg-gradient-to-r from-blue-400 to-blue-800 border-0 duration-700 transition-all hover:bg-gradient-to-r hover:from-blue-400 hover:via-purple-700 hover:to-purple-900
 }
 
 .error-container {
