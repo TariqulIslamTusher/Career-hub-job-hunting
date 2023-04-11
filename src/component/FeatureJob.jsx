@@ -1,10 +1,10 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import FeatureCard from './FeatureCard';
-import LgBtn from './LgBtn';
 import { RingContext } from './Home';
 
 const FeatureJob = () => {
     const companies = useContext(RingContext)
+
 
     return (
         <div className='py-7 my-container mx-auto'>
@@ -15,12 +15,13 @@ const FeatureJob = () => {
 
             <div className='grid md:grid-cols-2 gap-5'>
                 {
-                    companies.slice(0,4).map(company => <FeatureCard key={company.id} company={company}></FeatureCard>)
+                    companies?.slice(0, 4).map(company => <FeatureCard key={company.id} company={company}></FeatureCard>)
+
                 }
             </div>
 
             <div className='text-center mt-8'>
-                <LgBtn>See More</LgBtn>
+                <button className='LgBtn'>See More</button>
             </div>
         </div>
     );

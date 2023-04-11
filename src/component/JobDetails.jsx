@@ -1,20 +1,23 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import PageTopStyle from './PageTopStyle';
+import { addToLocalStorage } from './Utilities/Utilities';
+
 
 
 const JobDetails = () => {
     const companies = useLoaderData()
+
     // 👇️ get ID from URL
     const params = useParams();
     // console.log(params.jobId);
     // console.log(companies);    
-    const selectedData = companies.find(company => company.id == params.jobId)
+    const selectedData = companies?.find(company => company.id == params.jobId)
     const { id, responsibilities, educational_requirements, description, experience, email, title, salary_range, phone, address } = selectedData
     return (
         <div>
             <PageTopStyle>Job Details</PageTopStyle>
             <div className='my-container mx-auto lg:flex lg:items-center gap-5 py-20'>
-                <div className='w-full lg:w-8/12 px-16 text-lg'>
+                <div className='w-full lg:w-8/12 px-16 text-xl'>
                    
                         <h3 className='text-slate-700 mb-5'><span className='mr-5 font-bold text-black'>Job Description:</span>{description}</h3>
 
@@ -29,7 +32,7 @@ const JobDetails = () => {
                 {/* Job details and contact informations part  */}
 
                 
-                <div className='w-full lg:w-4/12 p-7 bg-[#c7c9d8] text-lg text-slate-600'>
+                <div className='w-full lg:w-4/12 p-6 md:p-10 bg-[#c7c9d8] rounded-lg text-xl text-slate-600'>
                     <h2 className='font-semibold border-b-2 border-slate-600 text-slate-800'>Job Details</h2>
                     <div className='py-5 mb-8 flex flex-col gap-3'>
                         <div className='flex'>
@@ -72,7 +75,11 @@ const JobDetails = () => {
                             </div>
                         </div>
                     </div>
+                <div className=' mt-4 text-center'>
+                    <button onClick={()=> addToLocalStorage(title)} className='LgBtn w-full'>Apply Now</button>
                 </div>
+                </div>
+
             </div>
         </div>
     );

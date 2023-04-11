@@ -1,10 +1,10 @@
 import React from 'react';
-import LgBtn from './LgBtn';
 import { Link } from 'react-router-dom';
+import { addToLocalStorage } from './Utilities/Utilities';
 
 
-const FeatureCard = ({ company }) => {
-    const {id, logo, company_name, title, location, salary_range, job_type } = company
+const FeatureCard = (props) => {
+    const {id, logo, company_name, title, location, salary_range, job_type } = props.company
     return (
         <div className='p-6 border-2 border-blue-200 w-full rounded-lg '>
             <img src={logo} alt="" />
@@ -26,7 +26,7 @@ const FeatureCard = ({ company }) => {
                 <p>Salery : {salary_range}</p>
 
             </div>
-            <Link to={`/jobDetails/${id}`}><LgBtn>View Details</LgBtn></Link>
+            <Link to={`/jobDetails/${id}`}><button className='LgBtn'>View Details</button></Link>
             
         </div>
     );
