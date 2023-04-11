@@ -1,6 +1,6 @@
 // make the handler to view details of the single card in a container
 
-export function addToLocalStorage(title){
+export function addToLocalStorage(id){
     let applyJob = {}
 
     const storedCart = localStorage.getItem('cart')
@@ -9,18 +9,18 @@ export function addToLocalStorage(title){
         applyJob = JSON.parse(storedCart)
     }
 
-    let qty = applyJob[title]
+    let qty = applyJob[id]
     if(qty){
         confirm('oh no!!! You already applied here, press ok to exit')
         if(!confirm){
             const newQty= qty+1
-            applyJob[title] = newQty
+            applyJob[id] = newQty
         } else{
             return;
         }
     } else{
         
-        applyJob[title] = 1
+        applyJob[id] = 1
     }
 
     localStorage.setItem('cart', JSON.stringify(applyJob))
@@ -28,5 +28,8 @@ export function addToLocalStorage(title){
 
 
 export function getItemFromLocalStoreage () {
-    
+    const getItemFromLS = localStorage.getItem('cart')
+    const Cart = JSON.parse(getItemFromLS)
+
+    return Cart
 }

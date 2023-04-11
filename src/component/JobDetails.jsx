@@ -76,7 +76,7 @@ const JobDetails = () => {
                         </div>
                     </div>
                 <div className=' mt-4 text-center'>
-                    <button onClick={()=> addToLocalStorage(title)} className='LgBtn w-full'>Apply Now</button>
+                    <button onClick={()=> addToLocalStorage(id)} className='LgBtn w-full'>Apply Now</button>
                 </div>
                 </div>
 

@@ -3,6 +3,7 @@ import FeatureCard from './FeatureCard';
 import { RingContext } from './Home';
 
 const FeatureJob = () => {
+    const [open, setOpen] = useState(false)
     const companies = useContext(RingContext)
 
 
@@ -15,13 +16,17 @@ const FeatureJob = () => {
 
             <div className='grid md:grid-cols-2 gap-5'>
                 {
+                    open?  companies?.map(company => <FeatureCard key={company.id} company={company}></FeatureCard>) :  companies?.slice(0, 4).map(company => <FeatureCard key={company.id} company={company}></FeatureCard>)
+                }
+
+                {/* {
                     companies?.slice(0, 4).map(company => <FeatureCard key={company.id} company={company}></FeatureCard>)
 
-                }
+                } */}
             </div>
 
             <div className='text-center mt-8'>
-                <button className='LgBtn'>See More</button>
+                <button onClick={()=> setOpen(!open)} className='LgBtn'>{open? "See Less" : "See More"}</button>
             </div>
         </div>
     );
