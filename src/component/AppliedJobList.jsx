@@ -53,16 +53,35 @@ const AppliedJobList = () => {
     return (
         <div>
             <PageTopStyle>Applied Job</PageTopStyle>
+            {/* daisy ui filter */}
+            <div className="my-container mx-auto">
+                
+                <div className="navbar flex flex-row-reverse">
+                    <div></div>
+                    <ul className="menu menu-horizontal px-1">
 
-            <div className='flex my-container mx-auto'>
-                <button onClick={remote} className='LgBtn'>Remote Job</button>
-                <button onClick={onTime} className='LgBtn'>On Time Job</button>
-                <button onClick={()=> setJobstate(false)} className='LgBtn'>Default</button>
+                        <li tabIndex={0}>
+                            <a className='text-xl font-semibold border-2'>
+                                Filter By
+                                <svg className="fill-current" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z" /></svg>
+                            </a>
+                            <ul className="p-2 border bg-white">
+                                <li className='border-b-2'> <button onClick={() => setJobstate(false)}>Default</button></li>
+                                <li className='border-b-2'> <button onClick={remote} >Remote Job</button></li>
+                                <li className='border-b-2'><button onClick={onTime} >On Time Job</button></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                </div>
+                
             </div>
+            {/* daisy ui filter */}
 
             <div className='my-container mx-auto'>
                 {
-                    jobstate ? 
+                    jobstate ?
                         jobType.map(singleList => <VerticallyCardDesign key={singleList.id} singleList={singleList}></VerticallyCardDesign>) :
                         appliedList.map(singleList => <VerticallyCardDesign key={singleList.id} singleList={singleList}></VerticallyCardDesign>)
                 }
