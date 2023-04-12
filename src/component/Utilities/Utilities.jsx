@@ -4,7 +4,7 @@ import { toast } from "react-toastify";
 
 
 export const notifySuccess = ()=>{
-    toast.success('Applied your cv',{position: 'top-center'})
+    toast.success('Application Completed',{position: 'top-center'})
 }
 
 export const notifyError = ()=>{

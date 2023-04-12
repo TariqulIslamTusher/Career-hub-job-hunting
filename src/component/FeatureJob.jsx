@@ -22,7 +22,7 @@ const FeatureJob = () => {
             </div>
 
             <div className='text-center mt-8'>
-                <button onClick={()=> setOpen(!open)} className='LgBtn'>{open? "See Less" : "See More"}</button>
+                <button onClick={()=> setOpen(!open)} className='LgBtn'>{open? "See Less" : "See All Job"}</button>
             </div>
         </div>
     );
