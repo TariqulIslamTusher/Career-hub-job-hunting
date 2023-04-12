@@ -14,7 +14,7 @@ const FeatureJob = () => {
                 <p className='text-sm text-muted'>Explore thousands of job opportunities with all the information you need. Its your future</p>
             </div>
 
-            <div className='grid md:grid-cols-2 gap-5'>
+            <div className='grid md:grid-cols-2 gap-5 md:gap-8 shadow-xl'>
                 {
                     open? companies.map(company => <FeatureCard key={company.id} company={company}></FeatureCard>) :  companies?.slice(0, 4).map(company => <FeatureCard key={company.id} company={company}></FeatureCard>)
                 }

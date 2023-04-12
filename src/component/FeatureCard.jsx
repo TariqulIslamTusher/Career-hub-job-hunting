@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const FeatureCard = (props) => {
     const {id, logo, company_name, title, location, salary_range, job_type } = props.company
     return (
-        <div className='p-6 border-2 border-blue-200 w-full rounded-lg '>
+        <div className='p-4 md:p-8 border-2 border-blue-200 w-full rounded-lg '>
             <img src={logo} alt="" />
             <h2 className='font-bold text-3xl my-3 text-orange-700'>{title}</h2>
             <h5 className='text-teal-900 font-semibold'>{company_name}</h5>
@@ -28,7 +28,7 @@ const FeatureCard = (props) => {
                 <p>Salery : {salary_range}</p>
 
             </div>
-            <Link to={`/jobDetails/${id}`}><button className='LgBtn'>View Details</button></Link>
+            <Link to={`/jobDetails/${id}`}><button className='LgBtn mt-3'>View Details</button></Link>
             
         </div>
     );

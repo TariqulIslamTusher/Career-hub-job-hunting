@@ -18,7 +18,7 @@ export function addToLocalStorage(id){
 
     if(storedCart){
         applyJob = JSON.parse(storedCart)
-    }
+    } 
 
     let qty = applyJob[id]
     if(qty){

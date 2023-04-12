@@ -18,21 +18,21 @@ const JobDetails = () => {
             <ToastContainer></ToastContainer>
             <PageTopStyle>Job Details</PageTopStyle>
             <div className='my-container mx-auto lg:flex lg:items-center gap-5 py-20'>
-                <div className='w-full lg:w-8/12 px-16 text-xl'>
-                   
-                        <h3 className='text-slate-700 mb-5'><span className='mr-5 font-bold text-black'>Job Description:</span>{description}</h3>
+                <div className='w-full lg:w-8/12 px-16 text-xl md:text-2xl'>
 
-                        <h3 className='text-slate-700 mb-5'><span className='mr-5 font-bold text-black'>Job Responsibilities:</span>{responsibilities.map(res => <li>{res}</li>)}</h3>
+                    <h3 className='text-slate-700 mb-5'><span className='mr-5 font-bold text-black'>Job Description:</span>{description}</h3>
 
-                        <h3 className='text-slate-700 mb-5'><span className='mr-5 font-bold text-black'>Educational Requirements:</span>{educational_requirements}</h3>
+                    <h3 className='text-slate-700 mb-5'><span className='mr-5 font-bold text-black'>Job Responsibilities:</span>{responsibilities.map(res => <li>{res}</li>)}</h3>
 
-                        <h3 className='text-slate-700 mb-5'><span className='mr-5 font-bold text-black'>Experiences:</span>{experience}</h3>
-                   
+                    <h3 className='text-slate-700 mb-5'><span className='mr-5 font-bold text-black'>Educational Requirements:</span>{educational_requirements}</h3>
+
+                    <h3 className='text-slate-700 mb-5'><span className='mr-5 font-bold text-black'>Experiences:</span>{experience}</h3>
+
                 </div>
 
                 {/* Job details and contact informations part  */}
 
-                
+
                 <div className='w-full lg:w-4/12 p-6 md:p-10 bg-[#c7c9d8] rounded-lg text-xl text-slate-600'>
                     <h2 className='font-semibold border-b-2 border-slate-600 text-slate-800'>Job Details</h2>
                     <div className='py-5 mb-8 flex flex-col gap-3'>
@@ -76,9 +76,10 @@ const JobDetails = () => {
                             </div>
                         </div>
                     </div>
-                <div className='mt-4 text-center'>
-                    <button onClick={()=> addToLocalStorage(id)} className='LgBtn w-full'>Apply Now</button>
-                </div>
+
+                    <div className='mt-4 text-center'>
+                        <button onClick={() => addToLocalStorage(id)} className='LgBtn w-full'>Apply Now</button>
+                    </div>
                 </div>
 
             </div>
