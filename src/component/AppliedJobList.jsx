@@ -41,7 +41,7 @@ const AppliedJobList = () => {
 
     const onTime = () => {
         const Data = data.filter(SingleData => ArrayOfLocalObject.includes(SingleData.id))
-        const onTimeData = Data.filter(Sdata => Sdata.job_type[1] === "Ontime-Job")
+        const onTimeData = Data.filter(Sdata => Sdata.job_type[1] === "Onsite-Job")
         console.log(onTimeData)
         setJobstate(true)
         setJobType(onTimeData)

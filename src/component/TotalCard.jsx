@@ -6,7 +6,7 @@ import TotalSingleCard from './TotalSingleCard';
 const TotalCard = () => {
     const [companies, setCompanies] = useState([])
     useEffect(() => {
-        fetch('/public/companyDetails.json')
+        fetch('/companyDetails.json')
             .then(res => res.json())
             .then(data => setCompanies(data))
     }, [])

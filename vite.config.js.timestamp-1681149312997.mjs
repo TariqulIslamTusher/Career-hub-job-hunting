@@ -4,6 +4,7 @@ import react from "file:///D:/final-assg/career-hub-ninth-project/node_modules/@
 var vite_config_default = defineConfig({
   plugins: [react()]
 });
+
 export {
   vite_config_default as default
 };
