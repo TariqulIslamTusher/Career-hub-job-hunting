@@ -6,13 +6,13 @@ import VerticallyCardDesign from './VerticallyCardDesign';
 const AppliedJobList = () => {
     // state for full data
     const [data, setData] = useState([])
-    // state for filter data (remote or ontime)
+    // state for filter data (remote or Onsite)
     const [jobType, setJobType] = useState([])
     const [jobstate, setJobstate] = useState(false)
     // state for clearing the local storage
     const [state, setState] = useState(false)
     useEffect(() => {
-        fetch('/public/companyDetails.json')
+        fetch('/companyDetails.json')
             .then(res => res.json())
             .then(data => setData(data))
 
@@ -39,12 +39,11 @@ const AppliedJobList = () => {
         setJobType(remoteData)
     }
 
-    const onTime = () => {
+    const Onsite = () => {
         const Data = data.filter(SingleData => ArrayOfLocalObject.includes(SingleData.id))
-        const onTimeData = Data.filter(Sdata => Sdata.job_type[1] === "Onsite-Job")
-        console.log(onTimeData)
+        const OnsiteData = Data.filter(Sdata => Sdata.job_type[1] === "Onsite-Job")
         setJobstate(true)
-        setJobType(onTimeData)
+        setJobType(OnsiteData)
     }
 
     const appliedList = data.filter(singleData => ArrayOfLocalObject.includes(singleData.id))
@@ -69,7 +68,7 @@ const AppliedJobList = () => {
                                 <ul className="p-2 border bg-white">
                                     <li className='border-b-2'> <button onClick={() => setJobstate(false)}>Default</button></li>
                                     <li className='border-b-2'> <button onClick={remote} >Remote Job</button></li>
-                                    <li className='border-b-2'><button onClick={onTime} >Onsite Job</button></li>
+                                    <li className='border-b-2'><button onClick={Onsite} >Onsite Job</button></li>
                                 </ul>
                             </li>
 
