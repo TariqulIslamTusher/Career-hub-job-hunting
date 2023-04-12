@@ -1,5 +1,16 @@
 // make the handler to view details of the single card in a container
 
+import { toast } from "react-toastify";
+
+
+export const notifySuccess = ()=>{
+    toast.success('Applied your cv',{position: 'top-center'})
+}
+
+export const notifyError = ()=>{
+    toast.error('You can not apply sevaral time',{ position: 'top-center'})
+}
+
 export function addToLocalStorage(id){
     let applyJob = {}
 
@@ -11,15 +22,9 @@ export function addToLocalStorage(id){
 
     let qty = applyJob[id]
     if(qty){
-        confirm('oh no!!! You already applied here, press ok to exit')
-        if(!confirm){
-            const newQty= qty+1
-            applyJob[id] = newQty
-        } else{
-            return;
-        }
+        notifyError()
     } else{
-        
+        notifySuccess()
         applyJob[id] = 1
     }
 
@@ -35,4 +40,11 @@ export function getItemFromLocalStoreage () {
 }
 
 
-//delete the local storeage
+
+
+//delete the local storage
+
+export function deleteLocalStorage (){
+    localStorage.clear()
+}
+

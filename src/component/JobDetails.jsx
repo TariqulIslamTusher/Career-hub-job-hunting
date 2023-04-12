@@ -1,12 +1,12 @@
 import { useLoaderData, useParams } from 'react-router-dom';
 import PageTopStyle from './PageTopStyle';
 import { addToLocalStorage } from './Utilities/Utilities';
+import { ToastContainer } from 'react-toastify';
 
 
 
 const JobDetails = () => {
     const companies = useLoaderData()
-
     // 👇️ get ID from URL
     const params = useParams();
     // console.log(params.jobId);
@@ -15,6 +15,7 @@ const JobDetails = () => {
     const { id, responsibilities, educational_requirements, description, experience, email, title, salary_range, phone, address } = selectedData
     return (
         <div>
+            <ToastContainer></ToastContainer>
             <PageTopStyle>Job Details</PageTopStyle>
             <div className='my-container mx-auto lg:flex lg:items-center gap-5 py-20'>
                 <div className='w-full lg:w-8/12 px-16 text-xl'>
@@ -75,7 +76,7 @@ const JobDetails = () => {
                             </div>
                         </div>
                     </div>
-                <div className=' mt-4 text-center'>
+                <div className='mt-4 text-center'>
                     <button onClick={()=> addToLocalStorage(id)} className='LgBtn w-full'>Apply Now</button>
                 </div>
                 </div>

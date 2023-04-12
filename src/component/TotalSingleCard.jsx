@@ -1,14 +1,13 @@
 import React from 'react';
-import { addToLocalStorage } from './Utilities/Utilities';
+import { addToLocalStorage, notifySuccess } from './Utilities/Utilities';
+import { ToastContainer } from 'react-toastify';
 
-const TotalSingleCard = ({company}) => {
-
-    
+const TotalSingleCard = ({ company }) => {
     const { id, logo, title, company_name, job_type, location, salary_range } = company
-    console.log(company)
+
     return (
         <div>
-            
+            <ToastContainer></ToastContainer>
             <div className='flex my-container mx-auto gap-8 w-full border-2 border-slate-300 m-7'>
                 <div className='flex justify-center items-center'>
                     <img className='py-20 px-12 bg-slate-300' src={logo} alt="" />
@@ -36,7 +35,9 @@ const TotalSingleCard = ({company}) => {
                         </div>
 
                     </div>
-                    <button onClick={()=> addToLocalStorage(id)} className='LgBtn'>Apply Now</button>
+                    <div>
+                        <button onClick={() => addToLocalStorage(id)} className='LgBtn'>Apply Now</button>
+                    </div>
                 </div>
 
                 <div>

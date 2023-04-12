@@ -16,13 +16,9 @@ const FeatureJob = () => {
 
             <div className='grid md:grid-cols-2 gap-5'>
                 {
-                    open?  companies?.map(company => <FeatureCard key={company.id} company={company}></FeatureCard>) :  companies?.slice(0, 4).map(company => <FeatureCard key={company.id} company={company}></FeatureCard>)
+                    open? companies.map(company => <FeatureCard key={company.id} company={company}></FeatureCard>) :  companies?.slice(0, 4).map(company => <FeatureCard key={company.id} company={company}></FeatureCard>)
                 }
 
-                {/* {
-                    companies?.slice(0, 4).map(company => <FeatureCard key={company.id} company={company}></FeatureCard>)
-
-                } */}
             </div>
 
             <div className='text-center mt-8'>

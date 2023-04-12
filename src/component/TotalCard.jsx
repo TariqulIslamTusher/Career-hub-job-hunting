@@ -16,7 +16,7 @@ const TotalCard = () => {
         <div>
             <PageTopStyle>Apply More For Your Carrier</PageTopStyle>
             {
-                companies.map(company => <TotalSingleCard company={company}></TotalSingleCard>)
+                companies.map(company => <TotalSingleCard key={company.id} company={company}></TotalSingleCard>)
             }
 
         </div>
